@@ -12,6 +12,7 @@ from pathlib import Path
 from craig_webscraper import scrape_craig, fields_apartment
 from analyze_strings import reformat_strings, generate_list_strings
 from remove_duplicates import remove_duplicates
+from Filter_and_Send import filter_and_send
 
 
 def reformat_all(apartments_total):
@@ -56,4 +57,5 @@ def scrape_save(max_pages,filename):
 
 if __name__ == '__main__':
     scrape_save(3,"test.csv")
-    remove_duplicates("test.csv")
+    outfile = remove_duplicates("test.csv")
+    filter_and_send(outfile,2000,"vancouver")

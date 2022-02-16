@@ -9,7 +9,6 @@ This script can be imported for use of the following function:
 def remove_duplicates(infile):
 
     print("Removing duplicate entries...")
-
     outfile = infile[0:infile.find('.')] + "_nodups.csv"
 
     with open(infile,'r') as in_file, open(outfile,'w') as out_file:
@@ -29,3 +28,5 @@ def remove_duplicates(infile):
     print("number of duplicates removed: " + str(duplicates))
     in_file.close()
     out_file.close()
+
+    return outfile
