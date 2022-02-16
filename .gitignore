@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+test.csv
+test_nodups.csv
+apartments_email.csv
