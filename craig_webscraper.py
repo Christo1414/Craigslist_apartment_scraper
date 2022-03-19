@@ -30,8 +30,8 @@ def craig_spider(max_pages, time_sleep):
     offset = 0
     max_offset = max_pages*120
 
-    # set minimum time to sleep here
-    min_sleep = 1
+    # set minimum time to sleep between get requests (seconds)
+    min_sleep = 0.2
     if time_sleep < min_sleep:
         time_sleep = min_sleep 
 

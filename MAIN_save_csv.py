@@ -52,10 +52,10 @@ def scrape_save(max_pages,filename):
     
         
 # _______MAIN________
-# scrape three pages and save to test.csv
+# scrape (slowly) three pages and save to test.csv
 # then get duplicate entries removed
 
 if __name__ == '__main__':
-    scrape_save(3,"test.csv")
+    scrape_save(2,"test.csv")
     outfile = remove_duplicates("test.csv")
     #filter_and_send(outfile,2000,"vancouver")
