@@ -1,6 +1,7 @@
 ''' remove_duplicates.py
-This script will iterate through the csv list and create a new file with 
-unique values for .link attribute
+This script will iterate through the csv list and create a new file which
+only contains entries with unique values in the link attribute.
+
 This script can be imported for use of the following function:
     * remove_duplicates(infile)
 '''

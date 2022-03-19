@@ -1,12 +1,11 @@
 '''  analyze_strings.py
-Parses and formats the different strings of scraped data.
-Specifically,
+Transforms the strings of data, specifically,
     -reformatting apartment.ft2 to extract #bedrooms and remove letters/symbols
         if #br- not present assume 1br
         if ft2 not present assume average value
     -parsing apartment.hood and categorizing into one of 6 cities
         ["north van","new west","burnaby","richmond","vancouver","surrey"]
-    -parse apartment.price and remove the following symbols: "$, 
+    -parse apartment.price and remove the following symbols: {" $ ,}
 
 This script can be imported for use of the following functions:
     * reformat_strings(apartment)               - does the above formatting
@@ -18,7 +17,7 @@ This script can be imported for use of the following functions:
 
 from craig_webscraper import Apartment
 
-def init_apartment():
+def init_apartment(): # for testing
     Apartment.id = 0
     Apartment.date = 'Feb 14'
     Apartment.ft2 = '1br-n/a'
