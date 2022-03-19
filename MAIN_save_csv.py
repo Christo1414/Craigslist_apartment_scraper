@@ -58,4 +58,4 @@ def scrape_save(max_pages,filename):
 if __name__ == '__main__':
     scrape_save(3,"test.csv")
     outfile = remove_duplicates("test.csv")
-    filter_and_send(outfile,2000,"vancouver")
+    #filter_and_send(outfile,2000,"vancouver")
